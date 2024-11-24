@@ -2,25 +2,32 @@
 #define ZA_H
 
 #include "ZN.hpp"
+#include "Parcelle.hpp"
 
 class ZA : public ZN {
-private:
-    string typeCulture; 
-    ZA(int num, const string& prop, Polygone<int> forme, const string& culture)
-        : ZN(num, prop, forme), typeCulture(culture) {}
-
-    
-    void TypeZ(const string& type) override {
-        this->type = "Zone Agricole";
-    }
-
-    friend ostream& operator<<(ostream& os, const ZA& za) {
-        os << "Type: " << za.type << ", Numero: " << za.numero
-           << ", Proprietaire: " << za.proprietaire
-           << ", Surface Totale: " << za.surface << " m²"
-           << ", Type de Culture: " << za.typeCulture;
-        return os;
-    }
+public:
+    ZA(int num, const string& prop, Polygone<int> polygone);
+    void setType(const string& type) override;
+    friend ostream& operator<<(ostream& os, const ZA& za);
 };
+
+ZA::ZA(int num, const string& prop, Polygone<int> polygone) : ZN(num, prop, polygone) {
+    setType("Zone Agricole");
+}
+
+void ZA::setType(const string& type) {
+    Parcelle<int>::setType(type);
+}
+
+ostream& operator<<(ostream& os, const ZA& za) {
+    os << "Parcelle n°" << za.getNumero() << " :" << endl;
+    os << "     Type : " << za.getType() << endl;
+    os << "     Propriétaire : " << za.getProprietaire() << endl;
+    os << "     Surface : " << za.getSurface() << " m²" << endl;
+    os << "     Surface constructible : 10%" << endl;
+    os << "     " << za.getForme() << endl;
+
+    return os;
+}
 
 #endif

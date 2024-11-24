@@ -1,7 +1,6 @@
-#ifndef ZAU_H
-#define ZAU_H
+#ifndef ZAU_HPP
+#define ZAU_HPP
 
-#include <random>
 #include "Constructible.hpp"
 #include "Parcelle.hpp"
 
@@ -11,8 +10,6 @@ class ZAU : public Constructible, public Parcelle<int> {
 public:
     ZAU(int num, const string& prop, Polygone<int> polygone);
 
-    void genererSurfaceConstructible() override;
-
     void setType(const string& type) override;
 
     friend ostream& operator<<(ostream& os, const ZAU& zau);
@@ -20,17 +17,7 @@ public:
 
 ZAU::ZAU(int num, const string& prop, Polygone<int> polygone) : Parcelle<int>(num, prop, polygone) {
     setType("Zone Agricole Urbaine");
-    genererSurfaceConstructible();
-}
-
-void ZAU::genererSurfaceConstructible() {
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> dis(0, 100);
-
-    dis(gen);
-
-    Constructible::setSurfaceConstructible(dis(gen));
+    Constructible::genererSurfaceConstructible();
 }
 
 void ZAU::setType(const string& type) {

@@ -2,6 +2,8 @@
 #define CONSTRUCTIBLE_H
 
 #include "Parcelle.hpp"
+#include <random>
+
 
 class Constructible {
 protected:
@@ -12,8 +14,8 @@ public:
 
     int getSurfaceConstructible() const;
     void setSurfaceConstructible(int surface);
-
-    virtual void genererSurfaceConstructible() = 0;
+    
+    void genererSurfaceConstructible();
 };
 
 Constructible::Constructible() {
@@ -22,6 +24,16 @@ Constructible::Constructible() {
 
 Constructible::~Constructible() {
 
+}
+
+void Constructible::genererSurfaceConstructible() {
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dis(0, 100);
+
+    dis(gen);
+
+    Constructible::setSurfaceConstructible(dis(gen));
 }
 
 int Constructible::getSurfaceConstructible() const {

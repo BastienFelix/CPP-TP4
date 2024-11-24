@@ -1,0 +1,35 @@
+#ifndef ZN_HPP
+#define ZN_HPP
+
+#include "Parcelle.hpp"
+
+using namespace std;
+
+class ZN : public Parcelle<int> {
+    public:
+        ZN(int num, const string& prop, Polygone<int> polygone);
+        void setType(const string& type) override;
+        friend ostream& operator<<(ostream& os, const ZN& zn);
+};
+
+ZN::ZN(int num, const string& prop, Polygone<int> polygone) : Parcelle<int>(num, prop, polygone) {
+    setType("Zone Naturelle et forestière");
+}
+
+void ZN::setType(const string& type) {
+    Parcelle<int>::setType(type);
+}
+
+ostream& operator<<(ostream& os, const ZN& zn) {
+    os << "Parcelle n°" << zn.getNumero() << " :" << endl;
+    os << "     Type : " << zn.getType() << endl;
+    os << "     Propriétaire : " << zn.getProprietaire() << endl;
+    os << "     Surface : " << zn.getSurface() << " m²" << endl;
+    os << "     Surface constructible : 0%" << endl;
+    os << "     " << zn.getForme() << endl;
+
+    return os;
+}
+
+#endif
+

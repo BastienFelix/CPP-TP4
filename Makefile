@@ -9,7 +9,7 @@ TARGET = main
 SRCS = main.cpp
 
 # Header files
-HDRS = Point2D.hpp Polygone.hpp Parcelle.hpp ZAU.hpp
+HDRS = Point2D.hpp Polygone.hpp Parcelle.hpp ZAU.hpp ZN.hpp ZU.hpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
