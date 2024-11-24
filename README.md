@@ -1,4 +1,4 @@
 # CPP-TP4
-Felix Bastien
-Royer Tommy
-Yejin Christine
+FELIX Bastien
+ROYER Tommy
+YEJIN Christine
