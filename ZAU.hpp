@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class ZAU : public Constructible, public Parcelle<int> {
+class ZAU : public Constructible, public Parcelle {
 public:
     ZAU(int num, const string& prop, Polygone<int> polygone);
 
@@ -15,13 +15,13 @@ public:
     friend ostream& operator<<(ostream& os, const ZAU& zau);
 };
 
-ZAU::ZAU(int num, const string& prop, Polygone<int> polygone) : Parcelle<int>(num, prop, polygone) {
+ZAU::ZAU(int num, const string& prop, Polygone<int> polygone) : Parcelle(num, prop, polygone) {
     setType("Zone Agricole Urbaine");
     Constructible::genererSurfaceConstructible();
 }
 
 void ZAU::setType(const string& type) {
-    Parcelle<int>::setType(type);
+    Parcelle::setType(type);
 }
 
 ostream& operator<<(ostream& os, const ZAU& zau) {

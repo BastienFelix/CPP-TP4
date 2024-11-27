@@ -11,6 +11,7 @@ protected:
 public:
     Constructible();
     ~Constructible();
+    
 
     int getSurfaceConstructible() const;
     void setSurfaceConstructible(int surface);

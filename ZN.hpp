@@ -5,19 +5,19 @@
 
 using namespace std;
 
-class ZN : public Parcelle<int> {
+class ZN : public Parcelle {
     public:
         ZN(int num, const string& prop, Polygone<int> polygone);
         void setType(const string& type) override;
         friend ostream& operator<<(ostream& os, const ZN& zn);
 };
 
-ZN::ZN(int num, const string& prop, Polygone<int> polygone) : Parcelle<int>(num, prop, polygone) {
+ZN::ZN(int num, const string& prop, Polygone<int> polygone) : Parcelle(num, prop, polygone) {
     setType("Zone Naturelle et forestière");
 }
 
 void ZN::setType(const string& type) {
-    Parcelle<int>::setType(type);
+    Parcelle::setType(type);
 }
 
 ostream& operator<<(ostream& os, const ZN& zn) {

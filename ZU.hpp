@@ -3,7 +3,7 @@
 
 #include "Constructible.hpp"
 
-class ZU : public Constructible, public Parcelle<int> {
+class ZU : public Constructible, public Parcelle {
 
 public:
     ZU(int num, const string& prop, Polygone<int> polygone);
@@ -13,13 +13,13 @@ public:
     friend ostream& operator<<(ostream& os, const ZU& zu);
 };
 
-ZU::ZU(int num, const string& prop, Polygone<int> polygone) : Parcelle<int>(num, prop, polygone) {
+ZU::ZU(int num, const string& prop, Polygone<int> polygone) : Parcelle(num, prop, polygone) {
     setType("Zone Urbaine");
     Constructible::genererSurfaceConstructible();
 }
 
 void ZU::setType(const string& type) {
-    Parcelle<int>::setType(type);
+    Parcelle::setType(type);
 }
 
 ostream& operator<<(ostream& os, const ZU& zu) {

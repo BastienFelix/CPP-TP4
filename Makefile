@@ -6,10 +6,10 @@ CXXFLAGS = -Wall -Wextra -std=c++11
 TARGET = main
 
 # Source files
-SRCS = main.cpp
+SRCS = main.cpp Parcelle.cpp
 
 # Header files
-HDRS = Point2D.hpp Polygone.hpp Parcelle.hpp ZAU.hpp ZN.hpp ZU.hpp
+HDRS = Point2D.hpp Polygone.hpp Parcelle.hpp ZAU.hpp ZN.hpp ZU.hpp Carte.hpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

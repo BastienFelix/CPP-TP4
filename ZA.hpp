@@ -16,7 +16,7 @@ ZA::ZA(int num, const string& prop, Polygone<int> polygone) : ZN(num, prop, poly
 }
 
 void ZA::setType(const string& type) {
-    Parcelle<int>::setType(type);
+    Parcelle::setType(type);
 }
 
 ostream& operator<<(ostream& os, const ZA& za) {
