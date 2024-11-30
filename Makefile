@@ -1,15 +1,12 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11
+CXXFLAGS = -Wall -Wextra -std=c++11 -Iheaders
 
 # Target executable
 TARGET = main
 
 # Source files
-SRCS = main.cpp Parcelle.cpp
-
-# Header files
-HDRS = Point2D.hpp Polygone.hpp Parcelle.hpp ZAU.hpp ZN.hpp ZU.hpp Carte.hpp
+SRCS = src/main.cpp src/Parcelle.cpp src/Carte.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
@@ -22,8 +19,8 @@ $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
 # Compile each source file into an object file
-%.o: %.cpp $(HDRS)
-	$(CXX) $(CXXFLAGS) -c $<
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -I. -c $< -o $@
 
 # Clean target to remove object files and the executable
 clean:

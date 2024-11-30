@@ -1,0 +1,120 @@
+\hypertarget{classZA}{}\doxysection{ZA Class Reference}
+\label{classZA}\index{ZA@{ZA}}
+
+
+Classe représentant une zone agricole, dérivée de \mbox{\hyperlink{classZN}{ZN}}.  
+
+
+
+
+{\ttfamily \#include $<$Z\+A.\+hpp$>$}
+
+
+
+Inheritance diagram for ZA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classZA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ZA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classZA__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classZA_add66e1b2e7c11d465ef683f0d968216a}{ZA}} (int num, const string \&prop, \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ polygone)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classZA}{ZA}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classZA_a8df4d06a4aca14c0ddb107f82a0327b0}{set\+Type}} (const string \&type) override
+\begin{DoxyCompactList}\small\item\em Définit le type de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classZA_afc6b7be647f03c38f0122b781e882e46}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classZA}{ZA}} \&za)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de flux pour l\textquotesingle{}affichage des informations de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une zone agricole, dérivée de \mbox{\hyperlink{classZN}{ZN}}. 
+
+La classe \mbox{\hyperlink{classZA}{ZA}} hérite de la classe \mbox{\hyperlink{classZN}{ZN}} et représente une parcelle de type zone agricole. Elle permet de définir le type de la parcelle et de surcharger l\textquotesingle{}opérateur de flux pour l\textquotesingle{}affichage. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classZA_add66e1b2e7c11d465ef683f0d968216a}\label{classZA_add66e1b2e7c11d465ef683f0d968216a}} 
+\index{ZA@{ZA}!ZA@{ZA}}
+\index{ZA@{ZA}!ZA@{ZA}}
+\doxysubsubsection{\texorpdfstring{ZA()}{ZA()}}
+{\footnotesize\ttfamily Z\+A\+::\+ZA (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{const string \&}]{prop,  }\item[{\mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$}]{polygone }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classZA}{ZA}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Numéro de la parcelle. \\
+\hline
+{\em prop} & Propriétaire de la parcelle. \\
+\hline
+{\em polygone} & Forme de la parcelle représentée par un polygone. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classZA_a8df4d06a4aca14c0ddb107f82a0327b0}\label{classZA_a8df4d06a4aca14c0ddb107f82a0327b0}} 
+\index{ZA@{ZA}!setType@{setType}}
+\index{setType@{setType}!ZA@{ZA}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Z\+A\+::set\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Définit le type de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type de la parcelle. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}{Parcelle}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classZA_afc6b7be647f03c38f0122b781e882e46}\label{classZA_afc6b7be647f03c38f0122b781e882e46}} 
+\index{ZA@{ZA}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ZA@{ZA}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classZA}{ZA}} \&}]{za }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de flux pour l\textquotesingle{}affichage des informations de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em za} & Référence constante vers l\textquotesingle{}objet \mbox{\hyperlink{classZA}{ZA}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{ZA_8hpp}{Z\+A.\+hpp}}\end{DoxyCompactItemize}

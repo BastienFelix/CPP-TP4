@@ -1,0 +1,9 @@
+<map id="headers/Parcelle.hpp" name="headers/Parcelle.hpp">
+<area shape="rect" id="node1" title="Déclaration de la classe Parcelle représentant une parcelle de terrain." alt="" coords="239,5,396,32"/>
+<area shape="rect" id="node2" href="$Carte_8hpp.html" title="Déclaration de la classe Carte." alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node3" href="$Constructible_8hpp.html" title="Déclaration de la classe Constructible." alt="" coords="221,80,413,107"/>
+<area shape="rect" id="node4" href="$ZAU_8hpp.html" title="Déclaration de la classe ZAU." alt="" coords="117,155,251,181"/>
+<area shape="rect" id="node6" href="$ZN_8hpp.html" title="Déclaration de la classe ZN." alt="" coords="437,80,563,107"/>
+<area shape="rect" id="node7" href="$ZA_8hpp.html" title="Déclaration de la classe ZA représentant une zone agricole." alt="" coords="487,155,611,181"/>
+<area shape="rect" id="node5" href="$ZU_8hpp.html" title="Déclaration de la classe ZU." alt="" coords="276,155,401,181"/>
+</map>

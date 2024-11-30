@@ -1,0 +1,99 @@
+\hypertarget{classCarte}{}\doxysection{Carte Class Reference}
+\label{classCarte}\index{Carte@{Carte}}
+
+
+Classe représentant une carte contenant des parcelles.  
+
+
+
+
+{\ttfamily \#include $<$Carte.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCarte_adb38fd0f20166298f450e5663094704a}{Carte}} (const string \&chemin\+Fichier)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classCarte}{Carte}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCarte_aa90d6f7fdb74a663737a63927248b60d}{get\+Surface\+Totale}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour obtenir la surface totale de la carte. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classParcelle}{Parcelle}} $\ast$ $>$ \mbox{\hyperlink{classCarte_a4f85eb8f4bc275ae2e0ac648ed5928e9}{get\+Parcelles}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour obtenir les parcelles de la carte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCarte_a2104383a0a5621fc78dca81be29b6e1f}{exporter\+Parcelles}} (const string \&chemin\+Fichier) const
+\begin{DoxyCompactList}\small\item\em Méthode pour exporter les parcelles dans un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une carte contenant des parcelles. 
+
+La classe \mbox{\hyperlink{classCarte}{Carte}} permet de charger des données de parcelles à partir d\textquotesingle{}un fichier, d\textquotesingle{}accéder à la surface totale de la carte, d\textquotesingle{}obtenir les parcelles et d\textquotesingle{}exporter les parcelles dans un fichier. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCarte_adb38fd0f20166298f450e5663094704a}\label{classCarte_adb38fd0f20166298f450e5663094704a}} 
+\index{Carte@{Carte}!Carte@{Carte}}
+\index{Carte@{Carte}!Carte@{Carte}}
+\doxysubsubsection{\texorpdfstring{Carte()}{Carte()}}
+{\footnotesize\ttfamily Carte\+::\+Carte (\begin{DoxyParamCaption}\item[{const string \&}]{chemin\+Fichier }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classCarte}{Carte}}. 
+
+Charge les données des parcelles à partir d\textquotesingle{}un fichier spécifié.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chemin\+Fichier} & Chemin du fichier contenant les données des parcelles. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCarte_a2104383a0a5621fc78dca81be29b6e1f}\label{classCarte_a2104383a0a5621fc78dca81be29b6e1f}} 
+\index{Carte@{Carte}!exporterParcelles@{exporterParcelles}}
+\index{exporterParcelles@{exporterParcelles}!Carte@{Carte}}
+\doxysubsubsection{\texorpdfstring{exporterParcelles()}{exporterParcelles()}}
+{\footnotesize\ttfamily void Carte\+::exporter\+Parcelles (\begin{DoxyParamCaption}\item[{const string \&}]{chemin\+Fichier }\end{DoxyParamCaption}) const}
+
+
+
+Méthode pour exporter les parcelles dans un fichier. 
+
+Exporte les données des parcelles dans un fichier spécifié.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chemin\+Fichier} & Chemin du fichier où exporter les données des parcelles. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCarte_a4f85eb8f4bc275ae2e0ac648ed5928e9}\label{classCarte_a4f85eb8f4bc275ae2e0ac648ed5928e9}} 
+\index{Carte@{Carte}!getParcelles@{getParcelles}}
+\index{getParcelles@{getParcelles}!Carte@{Carte}}
+\doxysubsubsection{\texorpdfstring{getParcelles()}{getParcelles()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classParcelle}{Parcelle}} $\ast$ $>$ Carte\+::get\+Parcelles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour obtenir les parcelles de la carte. 
+
+\begin{DoxyReturn}{Returns}
+Un vecteur de pointeurs vers les parcelles de la carte. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCarte_aa90d6f7fdb74a663737a63927248b60d}\label{classCarte_aa90d6f7fdb74a663737a63927248b60d}} 
+\index{Carte@{Carte}!getSurfaceTotale@{getSurfaceTotale}}
+\index{getSurfaceTotale@{getSurfaceTotale}!Carte@{Carte}}
+\doxysubsubsection{\texorpdfstring{getSurfaceTotale()}{getSurfaceTotale()}}
+{\footnotesize\ttfamily int Carte\+::get\+Surface\+Totale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour obtenir la surface totale de la carte. 
+
+\begin{DoxyReturn}{Returns}
+La surface totale de la carte. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{Carte_8hpp}{Carte.\+hpp}}\item 
+src/Carte.\+cpp\end{DoxyCompactItemize}

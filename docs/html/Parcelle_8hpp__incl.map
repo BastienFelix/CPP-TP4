@@ -1,0 +1,10 @@
+<map id="headers/Parcelle.hpp" name="headers/Parcelle.hpp">
+<area shape="rect" id="node1" title="Déclaration de la classe Parcelle représentant une parcelle de terrain." alt="" coords="57,5,214,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="130,229,210,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="21,80,80,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="104,80,167,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="191,80,278,107"/>
+<area shape="rect" id="node6" href="$Polygone_8hpp.html" title="Déclaration et implémentation de la classe template Polygone." alt="" coords="302,80,412,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="219,155,282,181"/>
+<area shape="rect" id="node8" href="$Point2D_8hpp.html" title="Déclaration et implémentation de la classe template Point2D." alt="" coords="306,155,408,181"/>
+</map>

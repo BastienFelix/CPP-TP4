@@ -1,0 +1,240 @@
+\hypertarget{classPoint2D}{}\doxysection{Point2D$<$ T $>$ Class Template Reference}
+\label{classPoint2D}\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+
+
+Classe template représentant un point dans un plan 2D.  
+
+
+
+
+{\ttfamily \#include $<$Point2\+D.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoint2D_aa7e8a9048cd58d07eb4399f021d96483}{Point2D}} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint2D_aee9a754c77f7d10e637348db18dc537c}{Point2D}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPoint2D_a546ce6452f56656f8a188c4fefc52b86}{Point2D}} (const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename U $>$ }\\\mbox{\hyperlink{classPoint2D_a3e6ce6ef526ac776561ae6899f58a115}{Point2D}} (const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ U $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Constructeur par conversion. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classPoint2D_a4c3d8f7647f96035ff5ba0069455219c}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la coordonnée x. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classPoint2D_ab88e1113439bbe1866f1741397c6976f}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la coordonnée y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoint2D_a262b08bc9b4e99b492587626df329f9e}{setX}} (T x)
+\begin{DoxyCompactList}\small\item\em Mutateur pour la coordonnée x. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoint2D_a2355bfb1cd8508e1bd29dc3b038aff05}{setY}} (T y)
+\begin{DoxyCompactList}\small\item\em Mutateur pour la coordonnée y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoint2D_a94a290345d80e22d12f1bcdca11de009}{translate}} (T dx, T dy)
+\begin{DoxyCompactList}\small\item\em Méthode de translation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\ostream \& \mbox{\hyperlink{classPoint2D_a7d5c07583fa19165efdf724f3d72e508}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ U $>$ \&point)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Point2\+D$<$ T $>$}
+
+Classe template représentant un point dans un plan 2D. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type des coordonnées du point. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoint2D_aa7e8a9048cd58d07eb4399f021d96483}\label{classPoint2D_aa7e8a9048cd58d07eb4399f021d96483}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::\mbox{\hyperlink{classPoint2D}{Point2D}} (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordonnée x initiale. \\
+\hline
+{\em y} & Coordonnée y initiale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint2D_aee9a754c77f7d10e637348db18dc537c}\label{classPoint2D_aee9a754c77f7d10e637348db18dc537c}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::\mbox{\hyperlink{classPoint2D}{Point2D}}}
+
+
+
+Constructeur par défaut. 
+
+Initialise les coordonnées à 0. \mbox{\Hypertarget{classPoint2D_a546ce6452f56656f8a188c4fefc52b86}\label{classPoint2D_a546ce6452f56656f8a188c4fefc52b86}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::\mbox{\hyperlink{classPoint2D}{Point2D}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{classPoint2D}{Point2D}} à copier. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint2D_a3e6ce6ef526ac776561ae6899f58a115}\label{classPoint2D_a3e6ce6ef526ac776561ae6899f58a115}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!Point2D@{Point2D}}
+\index{Point2D@{Point2D}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Point2D()}{Point2D()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+\mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::\mbox{\hyperlink{classPoint2D}{Point2D}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ U $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructeur par conversion. 
+
+Permet de convertir un \mbox{\hyperlink{classPoint2D}{Point2D}} d\textquotesingle{}un autre type en \mbox{\hyperlink{classPoint2D}{Point2D}} de type T.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & Type des coordonnées du point à convertir. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{classPoint2D}{Point2D}} à convertir. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoint2D_a4c3d8f7647f96035ff5ba0069455219c}\label{classPoint2D_a4c3d8f7647f96035ff5ba0069455219c}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!getX@{getX}}
+\index{getX@{getX}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::getX}
+
+
+
+Accesseur pour la coordonnée x. 
+
+\begin{DoxyReturn}{Returns}
+La coordonnée x. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint2D_ab88e1113439bbe1866f1741397c6976f}\label{classPoint2D_ab88e1113439bbe1866f1741397c6976f}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!getY@{getY}}
+\index{getY@{getY}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::getY}
+
+
+
+Accesseur pour la coordonnée y. 
+
+\begin{DoxyReturn}{Returns}
+La coordonnée y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoint2D_a262b08bc9b4e99b492587626df329f9e}\label{classPoint2D_a262b08bc9b4e99b492587626df329f9e}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!setX@{setX}}
+\index{setX@{setX}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::setX (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour la coordonnée x. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Nouvelle valeur pour la coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint2D_a2355bfb1cd8508e1bd29dc3b038aff05}\label{classPoint2D_a2355bfb1cd8508e1bd29dc3b038aff05}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!setY@{setY}}
+\index{setY@{setY}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::setY (\begin{DoxyParamCaption}\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour la coordonnée y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & Nouvelle valeur pour la coordonnée y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoint2D_a94a290345d80e22d12f1bcdca11de009}\label{classPoint2D_a94a290345d80e22d12f1bcdca11de009}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!translate@{translate}}
+\index{translate@{translate}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$\+::translate (\begin{DoxyParamCaption}\item[{T}]{dx,  }\item[{T}]{dy }\end{DoxyParamCaption})}
+
+
+
+Méthode de translation. 
+
+Translate le point de dx en x et dy en y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & Déplacement en x. \\
+\hline
+{\em dy} & Déplacement en y. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPoint2D_a7d5c07583fa19165efdf724f3d72e508}\label{classPoint2D_a7d5c07583fa19165efdf724f3d72e508}} 
+\index{Point2D$<$ T $>$@{Point2D$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Point2D$<$ T $>$@{Point2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ U $>$ \&}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & Type des coordonnées du point. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em point} & Point à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence au flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{Point2D_8hpp}{Point2\+D.\+hpp}}\end{DoxyCompactItemize}

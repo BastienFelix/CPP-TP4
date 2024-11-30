@@ -1,0 +1,125 @@
+\hypertarget{classZAU}{}\doxysection{Z\+AU Class Reference}
+\label{classZAU}\index{ZAU@{ZAU}}
+
+
+Classe représentant une Zone Agricole Urbaine.  
+
+
+
+
+{\ttfamily \#include $<$Z\+A\+U.\+hpp$>$}
+
+
+
+Inheritance diagram for Z\+AU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classZAU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Z\+AU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classZAU__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classZAU_ab51e4dfd5306e63580a0114eb3088712}{Z\+AU}} (int num, const string \&prop, \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ polygone)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classZAU}{Z\+AU}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classZAU_af4755436f106837a37cef2ba5bfe06f4}{set\+Type}} (const string \&type) override
+\begin{DoxyCompactList}\small\item\em Définit le type de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classZAU_a052f566bbcfbd87a65ee9ac295202f00}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classZAU}{Z\+AU}} \&zau)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de flux de sortie pour la classe \mbox{\hyperlink{classZAU}{Z\+AU}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une Zone Agricole Urbaine. 
+
+La classe \mbox{\hyperlink{classZAU}{Z\+AU}} hérite des classes \mbox{\hyperlink{classConstructible}{Constructible}} et \mbox{\hyperlink{classParcelle}{Parcelle}}. Elle permet de gérer les informations relatives à une parcelle de type Zone Agricole Urbaine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classZAU_ab51e4dfd5306e63580a0114eb3088712}\label{classZAU_ab51e4dfd5306e63580a0114eb3088712}} 
+\index{ZAU@{ZAU}!ZAU@{ZAU}}
+\index{ZAU@{ZAU}!ZAU@{ZAU}}
+\doxysubsubsection{\texorpdfstring{ZAU()}{ZAU()}}
+{\footnotesize\ttfamily Z\+A\+U\+::\+Z\+AU (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{const string \&}]{prop,  }\item[{\mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$}]{polygone }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classZAU}{Z\+AU}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Numéro de la parcelle. \\
+\hline
+{\em prop} & Propriétaire de la parcelle. \\
+\hline
+{\em polygone} & Forme de la parcelle représentée par un polygone. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classZAU_af4755436f106837a37cef2ba5bfe06f4}\label{classZAU_af4755436f106837a37cef2ba5bfe06f4}} 
+\index{ZAU@{ZAU}!setType@{setType}}
+\index{setType@{setType}!ZAU@{ZAU}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Z\+A\+U\+::set\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Définit le type de la parcelle. 
+
+Cette méthode redéfinit la méthode set\+Type de la classe \mbox{\hyperlink{classParcelle}{Parcelle}} pour définir le type de la parcelle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type de la parcelle. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}{Parcelle}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classZAU_a052f566bbcfbd87a65ee9ac295202f00}\label{classZAU_a052f566bbcfbd87a65ee9ac295202f00}} 
+\index{ZAU@{ZAU}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ZAU@{ZAU}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classZAU}{Z\+AU}} \&}]{zau }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de flux de sortie pour la classe \mbox{\hyperlink{classZAU}{Z\+AU}}. 
+
+Cette fonction permet d\textquotesingle{}afficher les informations relatives à une parcelle de type \mbox{\hyperlink{classZAU}{Z\+AU}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em zau} & Référence constante vers l\textquotesingle{}objet \mbox{\hyperlink{classZAU}{Z\+AU}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{ZAU_8hpp}{Z\+A\+U.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,240 @@
+\hypertarget{classParcelle}{}\doxysection{Parcelle Class Reference}
+\label{classParcelle}\index{Parcelle@{Parcelle}}
+
+
+Classe représentant une parcelle de terrain.  
+
+
+
+
+{\ttfamily \#include $<$Parcelle.\+hpp$>$}
+
+
+
+Inheritance diagram for Parcelle\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classParcelle__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParcelle_ae66d34b5b6849af9d61739cef47da6ac}{Parcelle}} (int num, const string \&prop, const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classParcelle}{Parcelle}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParcelle_ad711d58954132e3221b06e6655813c2a}{set\+Numero}} (int n)
+\begin{DoxyCompactList}\small\item\em Définit le numéro de la parcelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParcelle_a33c8373b1e08f517bceede0abf3b7610}{set\+Proprietaire}} (const string \&prop)
+\begin{DoxyCompactList}\small\item\em Définit le propriétaire de la parcelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParcelle_a02943eb975d9688ba29cac030049a9bb}{set\+Forme}} (const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ \&forme)
+\begin{DoxyCompactList}\small\item\em Définit la forme géométrique de la parcelle. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}{set\+Type}} (const string \&type)
+\begin{DoxyCompactList}\small\item\em Définit le type de la parcelle (constructible ou non). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParcelle_a8e92e422332206266c135f279dec7c92}{get\+Numero}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le numéro de la parcelle. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classParcelle_aac59528edde7f263fc0c7c4bf7c0eb3f}{get\+Proprietaire}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le propriétaire de la parcelle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classParcelle_aa23d8891632b62ce2250c3e7e655415b}{get\+Surface}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la surface de la parcelle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ \mbox{\hyperlink{classParcelle_a95a6f8948fb2d73f90df56cb44dee70a}{get\+Forme}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la forme géométrique de la parcelle. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classParcelle_a9d9e3e9fd3557feb0f811ccc0aab90a2}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le type de la parcelle (constructible ou non). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParcelle_a5b4668dd27e17cb3632f3614e964770a}\label{classParcelle_a5b4668dd27e17cb3632f3614e964770a}} 
+void \mbox{\hyperlink{classParcelle_a5b4668dd27e17cb3632f3614e964770a}{calcul\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la surface de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classParcelle_a21731fe2be566f30cddade1b92e2d68e}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classParcelle}{Parcelle}} \&parcelle)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage des informations de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une parcelle de terrain. 
+
+La classe \mbox{\hyperlink{classParcelle}{Parcelle}} permet de gérer les informations relatives à une parcelle de terrain, y compris son numéro, son propriétaire, sa forme géométrique, sa surface, et son type (constructible ou non). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParcelle_ae66d34b5b6849af9d61739cef47da6ac}\label{classParcelle_ae66d34b5b6849af9d61739cef47da6ac}} 
+\index{Parcelle@{Parcelle}!Parcelle@{Parcelle}}
+\index{Parcelle@{Parcelle}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{Parcelle()}{Parcelle()}}
+{\footnotesize\ttfamily Parcelle\+::\+Parcelle (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{const string \&}]{prop,  }\item[{const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classParcelle}{Parcelle}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Numéro de la parcelle. \\
+\hline
+{\em prop} & Nom du propriétaire de la parcelle. \\
+\hline
+{\em p} & Forme géométrique de la parcelle représentée par un polygone. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParcelle_a95a6f8948fb2d73f90df56cb44dee70a}\label{classParcelle_a95a6f8948fb2d73f90df56cb44dee70a}} 
+\index{Parcelle@{Parcelle}!getForme@{getForme}}
+\index{getForme@{getForme}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{getForme()}{getForme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ Parcelle\+::get\+Forme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la forme géométrique de la parcelle. 
+
+\begin{DoxyReturn}{Returns}
+Forme géométrique de la parcelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParcelle_a8e92e422332206266c135f279dec7c92}\label{classParcelle_a8e92e422332206266c135f279dec7c92}} 
+\index{Parcelle@{Parcelle}!getNumero@{getNumero}}
+\index{getNumero@{getNumero}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{getNumero()}{getNumero()}}
+{\footnotesize\ttfamily int Parcelle\+::get\+Numero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le numéro de la parcelle. 
+
+\begin{DoxyReturn}{Returns}
+Numéro de la parcelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParcelle_aac59528edde7f263fc0c7c4bf7c0eb3f}\label{classParcelle_aac59528edde7f263fc0c7c4bf7c0eb3f}} 
+\index{Parcelle@{Parcelle}!getProprietaire@{getProprietaire}}
+\index{getProprietaire@{getProprietaire}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{getProprietaire()}{getProprietaire()}}
+{\footnotesize\ttfamily string Parcelle\+::get\+Proprietaire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le propriétaire de la parcelle. 
+
+\begin{DoxyReturn}{Returns}
+Nom du propriétaire de la parcelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParcelle_aa23d8891632b62ce2250c3e7e655415b}\label{classParcelle_aa23d8891632b62ce2250c3e7e655415b}} 
+\index{Parcelle@{Parcelle}!getSurface@{getSurface}}
+\index{getSurface@{getSurface}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{getSurface()}{getSurface()}}
+{\footnotesize\ttfamily float Parcelle\+::get\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la surface de la parcelle. 
+
+\begin{DoxyReturn}{Returns}
+Surface de la parcelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParcelle_a9d9e3e9fd3557feb0f811ccc0aab90a2}\label{classParcelle_a9d9e3e9fd3557feb0f811ccc0aab90a2}} 
+\index{Parcelle@{Parcelle}!getType@{getType}}
+\index{getType@{getType}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Parcelle\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le type de la parcelle (constructible ou non). 
+
+\begin{DoxyReturn}{Returns}
+Type de la parcelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParcelle_a02943eb975d9688ba29cac030049a9bb}\label{classParcelle_a02943eb975d9688ba29cac030049a9bb}} 
+\index{Parcelle@{Parcelle}!setForme@{setForme}}
+\index{setForme@{setForme}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{setForme()}{setForme()}}
+{\footnotesize\ttfamily void Parcelle\+::set\+Forme (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ \&}]{forme }\end{DoxyParamCaption})}
+
+
+
+Définit la forme géométrique de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em forme} & Nouvelle forme géométrique de la parcelle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParcelle_ad711d58954132e3221b06e6655813c2a}\label{classParcelle_ad711d58954132e3221b06e6655813c2a}} 
+\index{Parcelle@{Parcelle}!setNumero@{setNumero}}
+\index{setNumero@{setNumero}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{setNumero()}{setNumero()}}
+{\footnotesize\ttfamily void Parcelle\+::set\+Numero (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Définit le numéro de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Nouveau numéro de la parcelle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParcelle_a33c8373b1e08f517bceede0abf3b7610}\label{classParcelle_a33c8373b1e08f517bceede0abf3b7610}} 
+\index{Parcelle@{Parcelle}!setProprietaire@{setProprietaire}}
+\index{setProprietaire@{setProprietaire}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{setProprietaire()}{setProprietaire()}}
+{\footnotesize\ttfamily void Parcelle\+::set\+Proprietaire (\begin{DoxyParamCaption}\item[{const string \&}]{prop }\end{DoxyParamCaption})}
+
+
+
+Définit le propriétaire de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prop} & Nouveau propriétaire de la parcelle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}\label{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}} 
+\index{Parcelle@{Parcelle}!setType@{setType}}
+\index{setType@{setType}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Parcelle\+::set\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Définit le type de la parcelle (constructible ou non). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Nouveau type de la parcelle. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classZU_ae3da8a3e9ed60a803f024f08ee042f1c}{ZU}}, \mbox{\hyperlink{classZAU_af4755436f106837a37cef2ba5bfe06f4}{Z\+AU}}, \mbox{\hyperlink{classZN_acdc11c0b66cafc2d08a10ac7df1c8567}{ZN}}, and \mbox{\hyperlink{classZA_a8df4d06a4aca14c0ddb107f82a0327b0}{ZA}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classParcelle_a21731fe2be566f30cddade1b92e2d68e}\label{classParcelle_a21731fe2be566f30cddade1b92e2d68e}} 
+\index{Parcelle@{Parcelle}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Parcelle@{Parcelle}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classParcelle}{Parcelle}} \&}]{parcelle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur $<$$<$ pour l\textquotesingle{}affichage des informations de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em parcelle} & \mbox{\hyperlink{classParcelle}{Parcelle}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Flux de sortie modifié. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{Parcelle_8hpp}{Parcelle.\+hpp}}\item 
+src/Parcelle.\+cpp\end{DoxyCompactItemize}

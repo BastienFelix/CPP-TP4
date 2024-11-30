@@ -1,0 +1,125 @@
+\hypertarget{classZU}{}\doxysection{ZU Class Reference}
+\label{classZU}\index{ZU@{ZU}}
+
+
+Classe représentant une zone urbaine.  
+
+
+
+
+{\ttfamily \#include $<$Z\+U.\+hpp$>$}
+
+
+
+Inheritance diagram for ZU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classZU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ZU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classZU__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classZU_ac27f91b2bda4eefedb1571c50f3d70ab}{ZU}} (int num, const string \&prop, \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ polygone)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classZU}{ZU}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classZU_ae3da8a3e9ed60a803f024f08ee042f1c}{set\+Type}} (const string \&type) override
+\begin{DoxyCompactList}\small\item\em Définit le type de la zone urbaine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classZU_a5f3ef1fd1e34e7529e721d713e511a16}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classZU}{ZU}} \&zu)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de flux de sortie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une zone urbaine. 
+
+La classe \mbox{\hyperlink{classZU}{ZU}} hérite des classes \mbox{\hyperlink{classConstructible}{Constructible}} et \mbox{\hyperlink{classParcelle}{Parcelle}}. Elle permet de définir une zone urbaine avec un numéro, un propriétaire et un polygone. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classZU_ac27f91b2bda4eefedb1571c50f3d70ab}\label{classZU_ac27f91b2bda4eefedb1571c50f3d70ab}} 
+\index{ZU@{ZU}!ZU@{ZU}}
+\index{ZU@{ZU}!ZU@{ZU}}
+\doxysubsubsection{\texorpdfstring{ZU()}{ZU()}}
+{\footnotesize\ttfamily Z\+U\+::\+ZU (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{const string \&}]{prop,  }\item[{\mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$}]{polygone }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classZU}{ZU}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Numéro de la zone urbaine. \\
+\hline
+{\em prop} & Propriétaire de la zone urbaine. \\
+\hline
+{\em polygone} & \mbox{\hyperlink{classPolygone}{Polygone}} représentant la zone urbaine. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classZU_ae3da8a3e9ed60a803f024f08ee042f1c}\label{classZU_ae3da8a3e9ed60a803f024f08ee042f1c}} 
+\index{ZU@{ZU}!setType@{setType}}
+\index{setType@{setType}!ZU@{ZU}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Z\+U\+::set\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Définit le type de la zone urbaine. 
+
+Cette méthode redéfinit la méthode virtuelle pure set\+Type de la classe \mbox{\hyperlink{classConstructible}{Constructible}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type de la zone urbaine. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}{Parcelle}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classZU_a5f3ef1fd1e34e7529e721d713e511a16}\label{classZU_a5f3ef1fd1e34e7529e721d713e511a16}} 
+\index{ZU@{ZU}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ZU@{ZU}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classZU}{ZU}} \&}]{zu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de flux de sortie. 
+
+Cette méthode permet d\textquotesingle{}afficher les informations de la zone urbaine dans un flux de sortie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em zu} & Référence constante vers l\textquotesingle{}objet \mbox{\hyperlink{classZU}{ZU}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence vers le flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{ZU_8hpp}{Z\+U.\+hpp}}\end{DoxyCompactItemize}

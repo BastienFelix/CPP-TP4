@@ -1,0 +1,120 @@
+\hypertarget{classZN}{}\doxysection{ZN Class Reference}
+\label{classZN}\index{ZN@{ZN}}
+
+
+Classe représentant une zone naturelle.  
+
+
+
+
+{\ttfamily \#include $<$Z\+N.\+hpp$>$}
+
+
+
+Inheritance diagram for ZN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classZN__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ZN\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{classZN__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classZN_a9c826f532b66186024cc6df330cf0e9d}{ZN}} (int num, const string \&prop, \mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$ polygone)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classZN}{ZN}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classZN_acdc11c0b66cafc2d08a10ac7df1c8567}{set\+Type}} (const string \&type) override
+\begin{DoxyCompactList}\small\item\em Définit le type de la parcelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classZN_a6dff579290b8c8886430bca53e680286}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classZN}{ZN}} \&zn)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de flux de sortie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une zone naturelle. 
+
+La classe \mbox{\hyperlink{classZN}{ZN}} hérite de la classe \mbox{\hyperlink{classParcelle}{Parcelle}} et représente une zone naturelle avec un numéro, un propriétaire et un polygone. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classZN_a9c826f532b66186024cc6df330cf0e9d}\label{classZN_a9c826f532b66186024cc6df330cf0e9d}} 
+\index{ZN@{ZN}!ZN@{ZN}}
+\index{ZN@{ZN}!ZN@{ZN}}
+\doxysubsubsection{\texorpdfstring{ZN()}{ZN()}}
+{\footnotesize\ttfamily Z\+N\+::\+ZN (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{const string \&}]{prop,  }\item[{\mbox{\hyperlink{classPolygone}{Polygone}}$<$ int $>$}]{polygone }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classZN}{ZN}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Numéro de la parcelle. \\
+\hline
+{\em prop} & Propriétaire de la parcelle. \\
+\hline
+{\em polygone} & \mbox{\hyperlink{classPolygone}{Polygone}} représentant la forme de la parcelle. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classZN_acdc11c0b66cafc2d08a10ac7df1c8567}\label{classZN_acdc11c0b66cafc2d08a10ac7df1c8567}} 
+\index{ZN@{ZN}!setType@{setType}}
+\index{setType@{setType}!ZN@{ZN}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Z\+N\+::set\+Type (\begin{DoxyParamCaption}\item[{const string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Définit le type de la parcelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type de la parcelle. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classParcelle_a3302f5e0adb7ad36d62eed0bb0188ecd}{Parcelle}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classZN_a6dff579290b8c8886430bca53e680286}\label{classZN_a6dff579290b8c8886430bca53e680286}} 
+\index{ZN@{ZN}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ZN@{ZN}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classZN}{ZN}} \&}]{zn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de flux de sortie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em zn} & Objet \mbox{\hyperlink{classZN}{ZN}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence au flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{ZN_8hpp}{Z\+N.\+hpp}}\end{DoxyCompactItemize}

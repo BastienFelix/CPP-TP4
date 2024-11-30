@@ -1,0 +1,204 @@
+\hypertarget{classPolygone}{}\doxysection{Polygone$<$ T $>$ Class Template Reference}
+\label{classPolygone}\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+
+
+Classe template représentant un polygone en 2D.  
+
+
+
+
+{\ttfamily \#include $<$Polygone.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolygone_ae8111d0050b282b6c92093722f0ff5a3}{Polygone}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{classPolygone}{Polygone}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygone_a18d5b2448ccc33ceb350f1ac2d539943}{Polygone}} (const vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$$>$ \&liste\+Sommets)
+\begin{DoxyCompactList}\small\item\em Constructeur avec liste de sommets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPolygone_abcc8cd406162ff4b87e8bc5955d58db9}{Polygone}} (const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$ \&poly)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ $>$ \mbox{\hyperlink{classPolygone_a3b024c395f5b05aef3ed0f4805e1750a}{get\+Sommets}} () const
+\begin{DoxyCompactList}\small\item\em Obtient les sommets du polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolygone_a43e24f510a75ce603a64e5f8d8484ade}{set\+Sommets}} (const vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$$>$ \&liste\+Sommets)
+\begin{DoxyCompactList}\small\item\em Définit les sommets du polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolygone_af5e97756f85398d6e2338f18a42a6655}{add\+Point}} (const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ \&point)
+\begin{DoxyCompactList}\small\item\em Ajoute un point au polygone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolygone_a8a08abf58e647733be204c287a2a976a}{translate}} (T x, T y)
+\begin{DoxyCompactList}\small\item\em Translate le polygone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\ostream \& \mbox{\hyperlink{classPolygone_a4a8fd34e7c07a5e8c8657f38243330cf}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ U $>$ \&poly)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur de flux de sortie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Polygone$<$ T $>$}
+
+Classe template représentant un polygone en 2D. 
+
+La classe \mbox{\hyperlink{classPolygone}{Polygone}} permet de créer et manipuler des polygones en 2D. Elle offre des méthodes pour obtenir et définir les sommets, ajouter des points, et translater le polygone.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type des coordonnées des points du polygone. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPolygone_ae8111d0050b282b6c92093722f0ff5a3}\label{classPolygone_ae8111d0050b282b6c92093722f0ff5a3}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!Polygone@{Polygone}}
+\index{Polygone@{Polygone}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Polygone()}{Polygone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::\mbox{\hyperlink{classPolygone}{Polygone}}}
+
+
+
+Constructeur par défaut de la classe \mbox{\hyperlink{classPolygone}{Polygone}}. 
+
+Initialise un polygone vide. \mbox{\Hypertarget{classPolygone_a18d5b2448ccc33ceb350f1ac2d539943}\label{classPolygone_a18d5b2448ccc33ceb350f1ac2d539943}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!Polygone@{Polygone}}
+\index{Polygone@{Polygone}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Polygone()}{Polygone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::\mbox{\hyperlink{classPolygone}{Polygone}} (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$$>$ \&}]{liste\+Sommets }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec liste de sommets. 
+
+Initialise un polygone avec une liste de sommets donnée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+Sommets} & Vecteur de points représentant les sommets du polygone. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPolygone_abcc8cd406162ff4b87e8bc5955d58db9}\label{classPolygone_abcc8cd406162ff4b87e8bc5955d58db9}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!Polygone@{Polygone}}
+\index{Polygone@{Polygone}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Polygone()}{Polygone()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::\mbox{\hyperlink{classPolygone}{Polygone}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$ \&}]{poly }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie. 
+
+Initialise un polygone en copiant un autre polygone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & \mbox{\hyperlink{classPolygone}{Polygone}} à copier. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolygone_af5e97756f85398d6e2338f18a42a6655}\label{classPolygone_af5e97756f85398d6e2338f18a42a6655}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!addPoint@{addPoint}}
+\index{addPoint@{addPoint}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addPoint()}{addPoint()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::add\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ \&}]{point }\end{DoxyParamCaption})}
+
+
+
+Ajoute un point au polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point à ajouter au polygone. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPolygone_a3b024c395f5b05aef3ed0f4805e1750a}\label{classPolygone_a3b024c395f5b05aef3ed0f4805e1750a}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!getSommets@{getSommets}}
+\index{getSommets@{getSommets}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSommets()}{getSommets()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$ $>$ \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::get\+Sommets}
+
+
+
+Obtient les sommets du polygone. 
+
+\begin{DoxyReturn}{Returns}
+Vecteur de points représentant les sommets du polygone. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPolygone_a43e24f510a75ce603a64e5f8d8484ade}\label{classPolygone_a43e24f510a75ce603a64e5f8d8484ade}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!setSommets@{setSommets}}
+\index{setSommets@{setSommets}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setSommets()}{setSommets()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::set\+Sommets (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classPoint2D}{Point2D}}$<$ T $>$$>$ \&}]{liste\+Sommets }\end{DoxyParamCaption})}
+
+
+
+Définit les sommets du polygone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste\+Sommets} & Vecteur de points représentant les nouveaux sommets du polygone. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPolygone_a8a08abf58e647733be204c287a2a976a}\label{classPolygone_a8a08abf58e647733be204c287a2a976a}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!translate@{translate}}
+\index{translate@{translate}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classPolygone}{Polygone}}$<$ T $>$\+::translate (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{y }\end{DoxyParamCaption})}
+
+
+
+Translate le polygone. 
+
+Déplace tous les sommets du polygone de (x, y).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Déplacement en x. \\
+\hline
+{\em y} & Déplacement en y. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classPolygone_a4a8fd34e7c07a5e8c8657f38243330cf}\label{classPolygone_a4a8fd34e7c07a5e8c8657f38243330cf}} 
+\index{Polygone$<$ T $>$@{Polygone$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Polygone$<$ T $>$@{Polygone$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classPolygone}{Polygone}}$<$ U $>$ \&}]{poly }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur de flux de sortie. 
+
+Permet d\textquotesingle{}afficher les informations du polygone dans un flux de sortie.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em U} & Type des coordonnées des points du polygone. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie. \\
+\hline
+{\em poly} & \mbox{\hyperlink{classPolygone}{Polygone}} à afficher. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Référence au flux de sortie. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{Polygone_8hpp}{Polygone.\+hpp}}\end{DoxyCompactItemize}
