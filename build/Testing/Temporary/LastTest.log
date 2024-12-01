@@ -1,0 +1,30 @@
+Start testing: Dec 01 10:15 UTC
+----------------------------------------------------------
+1/1 Testing: MyTests
+1/1 Test: MyTests
+Command: "/workspaces/CPP-TP4/build/runTests"
+Directory: /workspaces/CPP-TP4/build
+"MyTests" start time: Dec 01 10:15 UTC
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from Point2D
+[ RUN      ] Point2D.Constructor
+[       OK ] Point2D.Constructor (0 ms)
+[ RUN      ] Point2D.Setters
+[       OK ] Point2D.Setters (0 ms)
+[----------] 2 tests from Point2D (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"MyTests" end time: Dec 01 10:15 UTC
+"MyTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 01 10:15 UTC

@@ -1,10 +1,10 @@
-#include "headers/Carte.hpp"
-#include "headers/Polygone.hpp"
-#include "headers/Point2D.hpp"
-#include "headers/ZA.hpp"
-#include "headers/ZAU.hpp"
-#include "headers/ZU.hpp"
-#include "headers/ZN.hpp"
+#include "../headers/Carte.hpp"
+#include "../headers/Polygone.hpp"
+#include "../headers/Point2D.hpp"
+#include "../headers/ZA.hpp"
+#include "../headers/ZAU.hpp"
+#include "../headers/ZU.hpp"
+#include "../headers/ZN.hpp"
 
 using namespace std;
 
